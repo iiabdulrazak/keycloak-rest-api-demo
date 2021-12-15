@@ -1,0 +1,412 @@
+{
+	"info": {
+		"_postman_id": "cc0056ba-2735-4522-b28d-4809f4ca70b5",
+		"name": "keycloak-rest-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Requests",
+			"item": [
+				{
+					"name": "List Users",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJaLXRwbE9Bd1RlbFZpdFlPTEdQQndEYzVxX1ZFcUVmc0ViYTBXWndmemg4In0.eyJleHAiOjE2Mzk1NzA3NTgsImlhdCI6MTYzOTU3MDQ1OCwianRpIjoiZGM4MzUzOTctNmY5OC00YzdhLWEyYjItMzI4YTZjYzllMWMwIiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo4MDgwL2F1dGgvcmVhbG1zL2RlbW8iLCJhdWQiOlsicmVhbG0tbWFuYWdlbWVudCIsImFjY291bnQiXSwic3ViIjoiNGNiNjI1ZTYtZWJiNC00NDQ5LWJlZGYtNzUxY2Q0MmQ3OTJmIiwidHlwIjoiQmVhcmVyIiwiYXpwIjoianMtY29uc29sZSIsInNlc3Npb25fc3RhdGUiOiJmMjQ3NDFhMy02ZWI1LTQ4Y2MtYTg3Zi01MWIzNWQzOTAxZTUiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbImh0dHA6Ly9sb2NhbGhvc3Q6ODAwMCJdLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiTWFuYWdlcnMiLCJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsicmVhbG0tbWFuYWdlbWVudCI6eyJyb2xlcyI6WyJ2aWV3LWlkZW50aXR5LXByb3ZpZGVycyIsInZpZXctcmVhbG0iLCJtYW5hZ2UtaWRlbnRpdHktcHJvdmlkZXJzIiwiaW1wZXJzb25hdGlvbiIsInJlYWxtLWFkbWluIiwiY3JlYXRlLWNsaWVudCIsIm1hbmFnZS11c2VycyIsInF1ZXJ5LXJlYWxtcyIsInZpZXctYXV0aG9yaXphdGlvbiIsInF1ZXJ5LWNsaWVudHMiLCJxdWVyeS11c2VycyIsIm1hbmFnZS1ldmVudHMiLCJtYW5hZ2UtcmVhbG0iLCJ2aWV3LWV2ZW50cyIsInZpZXctdXNlcnMiLCJ2aWV3LWNsaWVudHMiLCJtYW5hZ2UtYXV0aG9yaXphdGlvbiIsIm1hbmFnZS1jbGllbnRzIiwicXVlcnktZ3JvdXBzIl19LCJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6InByb2ZpbGUgZW1haWwiLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsIm5hbWUiOiJBYmR1bHJhemFrIE9zbWFuIiwicHJlZmVycmVkX3VzZXJuYW1lIjoiemFhayIsImdpdmVuX25hbWUiOiJBYmR1bHJhemFrIiwiZmFtaWx5X25hbWUiOiJPc21hbiIsImVtYWlsIjoiemFhazAxMDFAaG90bWFpbC5jb20ifQ.DbseMnVq2P45AMUTiZoFyDl-teRDraqpVsYqtxA-mAtkWXjvYKNugnAGbYlA499CWRHm_igYoYZH42PIsBq4jw7Fld4GljE7EnNBC4yoybP-Clqzhh2GKjhXT_ZP1TpMMBk0H0QKwQFImkcOM2GNZOUYyNkD4OivcWxibNq3yfd91iqpIGugI4JVlsBlBxsSP69Uyhb0cwNr_h640SRnZsiirx0VDROGvd3TXjad3SnDlmPhmV0sy_UNtdJuIMX2ohzfKCp_n0Uwn3gRExROJddRhKI2Il4s-lB7I70StiqdZvZfRwVDHIb58_BJKSEaUx-cvewaR1pXBcZCT8FbXA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/auth/admin/realms/demo/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"auth",
+								"admin",
+								"realms",
+								"demo",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List Groups",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJaLXRwbE9Bd1RlbFZpdFlPTEdQQndEYzVxX1ZFcUVmc0ViYTBXWndmemg4In0.eyJleHAiOjE2Mzk1NzU2MTMsImlhdCI6MTYzOTU3NTMxMywianRpIjoiMDQ1ZDQyOTUtNThiOC00Y2E1LTk2ZTEtMGMwZTFiNjRmNzk1IiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo4MDgwL2F1dGgvcmVhbG1zL2RlbW8iLCJhdWQiOlsicmVhbG0tbWFuYWdlbWVudCIsImFjY291bnQiXSwic3ViIjoiNGNiNjI1ZTYtZWJiNC00NDQ5LWJlZGYtNzUxY2Q0MmQ3OTJmIiwidHlwIjoiQmVhcmVyIiwiYXpwIjoianMtY29uc29sZSIsInNlc3Npb25fc3RhdGUiOiI4YTE2NGFmYS1mM2MyLTRlM2MtODRjMi1mZGM4NTZlNzdiNmIiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbImh0dHA6Ly9sb2NhbGhvc3Q6ODAwMCJdLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiTWFuYWdlcnMiLCJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsicmVhbG0tbWFuYWdlbWVudCI6eyJyb2xlcyI6WyJ2aWV3LWlkZW50aXR5LXByb3ZpZGVycyIsInZpZXctcmVhbG0iLCJtYW5hZ2UtaWRlbnRpdHktcHJvdmlkZXJzIiwiaW1wZXJzb25hdGlvbiIsInJlYWxtLWFkbWluIiwiY3JlYXRlLWNsaWVudCIsIm1hbmFnZS11c2VycyIsInF1ZXJ5LXJlYWxtcyIsInZpZXctYXV0aG9yaXphdGlvbiIsInF1ZXJ5LWNsaWVudHMiLCJxdWVyeS11c2VycyIsIm1hbmFnZS1ldmVudHMiLCJtYW5hZ2UtcmVhbG0iLCJ2aWV3LWV2ZW50cyIsInZpZXctdXNlcnMiLCJ2aWV3LWNsaWVudHMiLCJtYW5hZ2UtYXV0aG9yaXphdGlvbiIsIm1hbmFnZS1jbGllbnRzIiwicXVlcnktZ3JvdXBzIl19LCJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6InByb2ZpbGUgZW1haWwiLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsIm5hbWUiOiJBYmR1bHJhemFrIE9zbWFuIiwicHJlZmVycmVkX3VzZXJuYW1lIjoiemFhayIsImdpdmVuX25hbWUiOiJBYmR1bHJhemFrIiwiZmFtaWx5X25hbWUiOiJPc21hbiIsImVtYWlsIjoiemFhazAxMDFAaG90bWFpbC5jb20ifQ.e7qMsEyYpir9AeBbyQWZLo9SnRgl5OI3SdT5FnVA335_ZVo9s9yCbL_MGppTVgwyqVZCDZ7qi_KmZlkt8civyOIPOSkRQBjcOYNuyRMlaf7nDfdiL1aWQPoY11KkkLUAH4qMfpbTU_7YefUkr4_99Yak3TQyqTHgaAw5_5ZtLkMCHKswoR7M6wb8_2_ADpaND1B8bgePQnMYmph4cbC8c79VG225R0QDbljgysGMFgX-qnhkDN5LVnt3I1u596HDdst3yIhXhNpCcvqhIkcNUzhAuepj3YOBeNb7I1MENKzfZN1NKi4PDwW92Uyo1lmnqvN8g9WYEfv6prA95RoGQQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "http://localhost:8080/auth/admin/realms/demo/groups",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"auth",
+								"admin",
+								"realms",
+								"demo",
+								"groups"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Post Requests",
+			"item": [
+				{
+					"name": "Access Token",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "zaak",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "Dalya@1101",
+									"type": "text"
+								},
+								{
+									"key": "grant_type",
+									"value": "password",
+									"type": "text"
+								},
+								{
+									"key": "client_id",
+									"value": "js-console",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8080/auth/realms/demo/protocol/openid-connect/token",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"auth",
+								"realms",
+								"demo",
+								"protocol",
+								"openid-connect",
+								"token"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Group",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJaLXRwbE9Bd1RlbFZpdFlPTEdQQndEYzVxX1ZFcUVmc0ViYTBXWndmemg4In0.eyJleHAiOjE2Mzk1NzUyODMsImlhdCI6MTYzOTU3NDk4MywianRpIjoiMzlmMDllN2EtYjJjZC00ZDk5LTkzM2MtZjc0ODZmN2FhMjZlIiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo4MDgwL2F1dGgvcmVhbG1zL2RlbW8iLCJhdWQiOlsicmVhbG0tbWFuYWdlbWVudCIsImFjY291bnQiXSwic3ViIjoiNGNiNjI1ZTYtZWJiNC00NDQ5LWJlZGYtNzUxY2Q0MmQ3OTJmIiwidHlwIjoiQmVhcmVyIiwiYXpwIjoianMtY29uc29sZSIsInNlc3Npb25fc3RhdGUiOiI5MWI4YjVmZC03ODA1LTQyZWMtYTBlNS1iMGZmZDQwZmU0NzgiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbImh0dHA6Ly9sb2NhbGhvc3Q6ODAwMCJdLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiTWFuYWdlcnMiLCJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsicmVhbG0tbWFuYWdlbWVudCI6eyJyb2xlcyI6WyJ2aWV3LWlkZW50aXR5LXByb3ZpZGVycyIsInZpZXctcmVhbG0iLCJtYW5hZ2UtaWRlbnRpdHktcHJvdmlkZXJzIiwiaW1wZXJzb25hdGlvbiIsInJlYWxtLWFkbWluIiwiY3JlYXRlLWNsaWVudCIsIm1hbmFnZS11c2VycyIsInF1ZXJ5LXJlYWxtcyIsInZpZXctYXV0aG9yaXphdGlvbiIsInF1ZXJ5LWNsaWVudHMiLCJxdWVyeS11c2VycyIsIm1hbmFnZS1ldmVudHMiLCJtYW5hZ2UtcmVhbG0iLCJ2aWV3LWV2ZW50cyIsInZpZXctdXNlcnMiLCJ2aWV3LWNsaWVudHMiLCJtYW5hZ2UtYXV0aG9yaXphdGlvbiIsIm1hbmFnZS1jbGllbnRzIiwicXVlcnktZ3JvdXBzIl19LCJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6InByb2ZpbGUgZW1haWwiLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsIm5hbWUiOiJBYmR1bHJhemFrIE9zbWFuIiwicHJlZmVycmVkX3VzZXJuYW1lIjoiemFhayIsImdpdmVuX25hbWUiOiJBYmR1bHJhemFrIiwiZmFtaWx5X25hbWUiOiJPc21hbiIsImVtYWlsIjoiemFhazAxMDFAaG90bWFpbC5jb20ifQ.QlEGy5sYnYM15KYmrdeQI2oNJ-N0wtr3KvoF_8f9LtNQvq6FnoKqfvFgt93OfpfI_5Kr6w63mmEqqv4Ox8f09Px1lTPnHu0MzjyOmsmrEb6uOijBPNOfxLwIOpgykUnig8dzBZwsw3TbTZ1kggCF0pyyLera02DKzaePoxmmiebV7vlBw7-oZftgF5BlJ3vak-yIvqzatYCBG33JCzIzsi7L51gEmKC3IzI0UG2_HItR7Jsij4JcXbEI98yzxj2Fv0miK9zJgzMhIfbZTwekglLNuHCtjdGBmnqyx3hDENfpgwKwiyas7lfuj16-pDGtXFWsGQbGxjS6oeSsv0DOPw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"testers\",\r\n    \"path\": \"/testers\",\r\n    \"subGroups\": []\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/auth/admin/realms/demo/groups",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"auth",
+								"admin",
+								"realms",
+								"demo",
+								"groups"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create User",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJaLXRwbE9Bd1RlbFZpdFlPTEdQQndEYzVxX1ZFcUVmc0ViYTBXWndmemg4In0.eyJleHAiOjE2Mzk1NzY5NjYsImlhdCI6MTYzOTU3NjY2NiwianRpIjoiZjhhMjkxZGYtYjE2Zi00MGFiLTlhODItMmFmNzQzYTdlNjcxIiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo4MDgwL2F1dGgvcmVhbG1zL2RlbW8iLCJhdWQiOlsicmVhbG0tbWFuYWdlbWVudCIsImFjY291bnQiXSwic3ViIjoiNGNiNjI1ZTYtZWJiNC00NDQ5LWJlZGYtNzUxY2Q0MmQ3OTJmIiwidHlwIjoiQmVhcmVyIiwiYXpwIjoianMtY29uc29sZSIsInNlc3Npb25fc3RhdGUiOiJlMWJhMWZhNC1iNjBiLTQ1MzktYjA2Ni02NGZmNWY3ZTdjNzgiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbImh0dHA6Ly9sb2NhbGhvc3Q6ODAwMCJdLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiTWFuYWdlcnMiLCJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsicmVhbG0tbWFuYWdlbWVudCI6eyJyb2xlcyI6WyJ2aWV3LWlkZW50aXR5LXByb3ZpZGVycyIsInZpZXctcmVhbG0iLCJtYW5hZ2UtaWRlbnRpdHktcHJvdmlkZXJzIiwiaW1wZXJzb25hdGlvbiIsInJlYWxtLWFkbWluIiwiY3JlYXRlLWNsaWVudCIsIm1hbmFnZS11c2VycyIsInF1ZXJ5LXJlYWxtcyIsInZpZXctYXV0aG9yaXphdGlvbiIsInF1ZXJ5LWNsaWVudHMiLCJxdWVyeS11c2VycyIsIm1hbmFnZS1ldmVudHMiLCJtYW5hZ2UtcmVhbG0iLCJ2aWV3LWV2ZW50cyIsInZpZXctdXNlcnMiLCJ2aWV3LWNsaWVudHMiLCJtYW5hZ2UtYXV0aG9yaXphdGlvbiIsIm1hbmFnZS1jbGllbnRzIiwicXVlcnktZ3JvdXBzIl19LCJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6InByb2ZpbGUgZW1haWwiLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsIm5hbWUiOiJBYmR1bHJhemFrIE9zbWFuIiwicHJlZmVycmVkX3VzZXJuYW1lIjoiemFhayIsImdpdmVuX25hbWUiOiJBYmR1bHJhemFrIiwiZmFtaWx5X25hbWUiOiJPc21hbiIsImVtYWlsIjoiemFhazAxMDFAaG90bWFpbC5jb20ifQ.Q7a9MDlIQJd6wgpYWB4q2yHZkHA8naL2FjuEBOk0KLALztgJ7RUhQXx7IHvkoLZqn9Mqi2MSjyrNQsBmJ2mGordUi2DFXOoO4AJt_HZPoYaf8IogFQhjqO9q5JcG3Qe-_p2HpbEq25rUytFo4LDeOpT1KI21SGixAFgD8tM4sABxtbFfiNq3K_m2gq2flDqwiZABxqUEvp5l-tZrHXRzdYHbWustTNcFemuvVuMNtlhlHby8Zn1jkl2BQ3_C8F1h5JIzaZQysoiz8VoG0d_c4zW3BxkUOvmHONlCjUaRFwxiS5fdp4rFMfGqDYEXmnUSF8Xt4bckTj41Kb68J6Kb4A",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"elkady\",\r\n    \"enabled\": true,\r\n    \"totp\": false,\r\n    \"emailVerified\": true,\r\n    \"firstName\": \"Muhammed\",\r\n    \"lastName\": \"Elkady\",\r\n    \"email\": \"elkady@test.com\",\r\n    \"disableableCredentialTypes\": [],\r\n    \"requiredActions\": [],\r\n    \"notBefore\": 0,\r\n    \"access\": {\r\n        \"manageGroupMembership\": true,\r\n        \"view\": true,\r\n        \"mapRoles\": true,\r\n        \"impersonate\": true,\r\n        \"manage\": true\r\n    },\r\n    \"realmRoles\": [\r\n        \"mb-user\"\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/auth/admin/realms/demo/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"auth",
+								"admin",
+								"realms",
+								"demo",
+								"users"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Put Requests",
+			"item": [
+				{
+					"name": "Add User to Group",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJaLXRwbE9Bd1RlbFZpdFlPTEdQQndEYzVxX1ZFcUVmc0ViYTBXWndmemg4In0.eyJleHAiOjE2Mzk1NzY0ODUsImlhdCI6MTYzOTU3NjE4NSwianRpIjoiODJhNmVkOWQtMDgzNS00ZDg5LWFiODYtYzhiMzhlODZmZGQ5IiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo4MDgwL2F1dGgvcmVhbG1zL2RlbW8iLCJhdWQiOlsicmVhbG0tbWFuYWdlbWVudCIsImFjY291bnQiXSwic3ViIjoiNGNiNjI1ZTYtZWJiNC00NDQ5LWJlZGYtNzUxY2Q0MmQ3OTJmIiwidHlwIjoiQmVhcmVyIiwiYXpwIjoianMtY29uc29sZSIsInNlc3Npb25fc3RhdGUiOiI0YmY2NDQ0Ni0wZmJhLTQ4OGItYWNiMS05ZjVlMmQ4OTRlMTIiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbImh0dHA6Ly9sb2NhbGhvc3Q6ODAwMCJdLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiTWFuYWdlcnMiLCJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsicmVhbG0tbWFuYWdlbWVudCI6eyJyb2xlcyI6WyJ2aWV3LWlkZW50aXR5LXByb3ZpZGVycyIsInZpZXctcmVhbG0iLCJtYW5hZ2UtaWRlbnRpdHktcHJvdmlkZXJzIiwiaW1wZXJzb25hdGlvbiIsInJlYWxtLWFkbWluIiwiY3JlYXRlLWNsaWVudCIsIm1hbmFnZS11c2VycyIsInF1ZXJ5LXJlYWxtcyIsInZpZXctYXV0aG9yaXphdGlvbiIsInF1ZXJ5LWNsaWVudHMiLCJxdWVyeS11c2VycyIsIm1hbmFnZS1ldmVudHMiLCJtYW5hZ2UtcmVhbG0iLCJ2aWV3LWV2ZW50cyIsInZpZXctdXNlcnMiLCJ2aWV3LWNsaWVudHMiLCJtYW5hZ2UtYXV0aG9yaXphdGlvbiIsIm1hbmFnZS1jbGllbnRzIiwicXVlcnktZ3JvdXBzIl19LCJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6InByb2ZpbGUgZW1haWwiLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsIm5hbWUiOiJBYmR1bHJhemFrIE9zbWFuIiwicHJlZmVycmVkX3VzZXJuYW1lIjoiemFhayIsImdpdmVuX25hbWUiOiJBYmR1bHJhemFrIiwiZmFtaWx5X25hbWUiOiJPc21hbiIsImVtYWlsIjoiemFhazAxMDFAaG90bWFpbC5jb20ifQ.MfoabmusgmLq837_aOa8DmfYULSAdzl0_UN8JHOt9APggryPF3TuxwC8MyD-FA3XTlhoAuEsm7ruXQJNUgVd6XmiO2j8q1hXtegmzjYkahvxG3xOzviy-yhuxpymnopExAS95xFM_CFkrvvThh15F8_2gdBNcSYdbTG2Y7Q2vtFeB9tq-1qpolyAovl6R9mDPsTbZxogq6hG51W6zlC8sR02yBneFMRrmvL-pNYh-dzy0t2tPogBVJhqDITsyZ_ZjTAcncTeJ-5RQo7tKRqguFNIS4BU_30vKtKqj08JQHrrA2MJPgIgYv6ZA0ri8aJ_LM5B22ipL9mrARCIlwfjtw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/auth/admin/realms/demo/users/4cb625e6-ebb4-4449-bedf-751cd42d792f/groups/24aa29ae-09e6-4bc1-bf4e-9cbd6ebcd0ca",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"auth",
+								"admin",
+								"realms",
+								"demo",
+								"users",
+								"4cb625e6-ebb4-4449-bedf-751cd42d792f",
+								"groups",
+								"24aa29ae-09e6-4bc1-bf4e-9cbd6ebcd0ca"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Delete Requests",
+			"item": [
+				{
+					"name": "Delete Group",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJaLXRwbE9Bd1RlbFZpdFlPTEdQQndEYzVxX1ZFcUVmc0ViYTBXWndmemg4In0.eyJleHAiOjE2Mzk1NzYwNjYsImlhdCI6MTYzOTU3NTc2NiwianRpIjoiNDBmMTcxN2EtODMwYS00ZWRkLWJjM2UtNzU4MGQ4MmM0MjdjIiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo4MDgwL2F1dGgvcmVhbG1zL2RlbW8iLCJhdWQiOlsicmVhbG0tbWFuYWdlbWVudCIsImFjY291bnQiXSwic3ViIjoiNGNiNjI1ZTYtZWJiNC00NDQ5LWJlZGYtNzUxY2Q0MmQ3OTJmIiwidHlwIjoiQmVhcmVyIiwiYXpwIjoianMtY29uc29sZSIsInNlc3Npb25fc3RhdGUiOiJlMTBkOTBkZC04YWMwLTRhZjUtYjQ2YS02NTljNTBlZmNmNzMiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbImh0dHA6Ly9sb2NhbGhvc3Q6ODAwMCJdLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiTWFuYWdlcnMiLCJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsicmVhbG0tbWFuYWdlbWVudCI6eyJyb2xlcyI6WyJ2aWV3LWlkZW50aXR5LXByb3ZpZGVycyIsInZpZXctcmVhbG0iLCJtYW5hZ2UtaWRlbnRpdHktcHJvdmlkZXJzIiwiaW1wZXJzb25hdGlvbiIsInJlYWxtLWFkbWluIiwiY3JlYXRlLWNsaWVudCIsIm1hbmFnZS11c2VycyIsInF1ZXJ5LXJlYWxtcyIsInZpZXctYXV0aG9yaXphdGlvbiIsInF1ZXJ5LWNsaWVudHMiLCJxdWVyeS11c2VycyIsIm1hbmFnZS1ldmVudHMiLCJtYW5hZ2UtcmVhbG0iLCJ2aWV3LWV2ZW50cyIsInZpZXctdXNlcnMiLCJ2aWV3LWNsaWVudHMiLCJtYW5hZ2UtYXV0aG9yaXphdGlvbiIsIm1hbmFnZS1jbGllbnRzIiwicXVlcnktZ3JvdXBzIl19LCJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6InByb2ZpbGUgZW1haWwiLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsIm5hbWUiOiJBYmR1bHJhemFrIE9zbWFuIiwicHJlZmVycmVkX3VzZXJuYW1lIjoiemFhayIsImdpdmVuX25hbWUiOiJBYmR1bHJhemFrIiwiZmFtaWx5X25hbWUiOiJPc21hbiIsImVtYWlsIjoiemFhazAxMDFAaG90bWFpbC5jb20ifQ.N35xH5pQDd27dHDZEucv7qj6iQW13QL3zFYCZkvIlbdCXlws-q_ToM_0lR4BkuzNegVBteq_H8xOOYtzMEjyzRll0BjgMAxXVFcp5MiJzMMkns2njLIc2aNcFMLhvhiotMp1Oy7x2MziA14NQ6hYkIYmvI7XbCaX8m26hihObgUEhkZvGzoYtAp17Ivwt2HSszJw-MQGJ_-O9P7IAoOV208YTRty_ikIqURFsdIvicf4PG3LQafdwYsJXBVR_Z4IvDgwIUaqZ1ubtRXNfuJz1LKeu_hCi2RyXQ3KxagTwjgr6xzOo5ciidejCD_PwOzeD82cra9dsHgNPrau9DofqQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/auth/admin/realms/demo/groups/42478dcf-caf6-461d-9c1c-febb828ac223",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"auth",
+								"admin",
+								"realms",
+								"demo",
+								"groups",
+								"42478dcf-caf6-461d-9c1c-febb828ac223"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete User from Group",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJaLXRwbE9Bd1RlbFZpdFlPTEdQQndEYzVxX1ZFcUVmc0ViYTBXWndmemg4In0.eyJleHAiOjE2Mzk1NzY0ODUsImlhdCI6MTYzOTU3NjE4NSwianRpIjoiODJhNmVkOWQtMDgzNS00ZDg5LWFiODYtYzhiMzhlODZmZGQ5IiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo4MDgwL2F1dGgvcmVhbG1zL2RlbW8iLCJhdWQiOlsicmVhbG0tbWFuYWdlbWVudCIsImFjY291bnQiXSwic3ViIjoiNGNiNjI1ZTYtZWJiNC00NDQ5LWJlZGYtNzUxY2Q0MmQ3OTJmIiwidHlwIjoiQmVhcmVyIiwiYXpwIjoianMtY29uc29sZSIsInNlc3Npb25fc3RhdGUiOiI0YmY2NDQ0Ni0wZmJhLTQ4OGItYWNiMS05ZjVlMmQ4OTRlMTIiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbImh0dHA6Ly9sb2NhbGhvc3Q6ODAwMCJdLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiTWFuYWdlcnMiLCJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsicmVhbG0tbWFuYWdlbWVudCI6eyJyb2xlcyI6WyJ2aWV3LWlkZW50aXR5LXByb3ZpZGVycyIsInZpZXctcmVhbG0iLCJtYW5hZ2UtaWRlbnRpdHktcHJvdmlkZXJzIiwiaW1wZXJzb25hdGlvbiIsInJlYWxtLWFkbWluIiwiY3JlYXRlLWNsaWVudCIsIm1hbmFnZS11c2VycyIsInF1ZXJ5LXJlYWxtcyIsInZpZXctYXV0aG9yaXphdGlvbiIsInF1ZXJ5LWNsaWVudHMiLCJxdWVyeS11c2VycyIsIm1hbmFnZS1ldmVudHMiLCJtYW5hZ2UtcmVhbG0iLCJ2aWV3LWV2ZW50cyIsInZpZXctdXNlcnMiLCJ2aWV3LWNsaWVudHMiLCJtYW5hZ2UtYXV0aG9yaXphdGlvbiIsIm1hbmFnZS1jbGllbnRzIiwicXVlcnktZ3JvdXBzIl19LCJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6InByb2ZpbGUgZW1haWwiLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsIm5hbWUiOiJBYmR1bHJhemFrIE9zbWFuIiwicHJlZmVycmVkX3VzZXJuYW1lIjoiemFhayIsImdpdmVuX25hbWUiOiJBYmR1bHJhemFrIiwiZmFtaWx5X25hbWUiOiJPc21hbiIsImVtYWlsIjoiemFhazAxMDFAaG90bWFpbC5jb20ifQ.MfoabmusgmLq837_aOa8DmfYULSAdzl0_UN8JHOt9APggryPF3TuxwC8MyD-FA3XTlhoAuEsm7ruXQJNUgVd6XmiO2j8q1hXtegmzjYkahvxG3xOzviy-yhuxpymnopExAS95xFM_CFkrvvThh15F8_2gdBNcSYdbTG2Y7Q2vtFeB9tq-1qpolyAovl6R9mDPsTbZxogq6hG51W6zlC8sR02yBneFMRrmvL-pNYh-dzy0t2tPogBVJhqDITsyZ_ZjTAcncTeJ-5RQo7tKRqguFNIS4BU_30vKtKqj08JQHrrA2MJPgIgYv6ZA0ri8aJ_LM5B22ipL9mrARCIlwfjtw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/auth/admin/realms/demo/users/4cb625e6-ebb4-4449-bedf-751cd42d792f/groups/24aa29ae-09e6-4bc1-bf4e-9cbd6ebcd0ca",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"auth",
+								"admin",
+								"realms",
+								"demo",
+								"users",
+								"4cb625e6-ebb4-4449-bedf-751cd42d792f",
+								"groups",
+								"24aa29ae-09e6-4bc1-bf4e-9cbd6ebcd0ca"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete User",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJaLXRwbE9Bd1RlbFZpdFlPTEdQQndEYzVxX1ZFcUVmc0ViYTBXWndmemg4In0.eyJleHAiOjE2Mzk1NzcyNjcsImlhdCI6MTYzOTU3Njk2NywianRpIjoiNTZiNzU5NjAtNzlhOS00ZWIxLWI4ZDQtYzNiNTUxOTU1ZTRlIiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo4MDgwL2F1dGgvcmVhbG1zL2RlbW8iLCJhdWQiOlsicmVhbG0tbWFuYWdlbWVudCIsImFjY291bnQiXSwic3ViIjoiNGNiNjI1ZTYtZWJiNC00NDQ5LWJlZGYtNzUxY2Q0MmQ3OTJmIiwidHlwIjoiQmVhcmVyIiwiYXpwIjoianMtY29uc29sZSIsInNlc3Npb25fc3RhdGUiOiIxNWFjNTE3NC1iMGE1LTQyZmItOWU2OC1kYTBmYmExNjE0MDYiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbImh0dHA6Ly9sb2NhbGhvc3Q6ODAwMCJdLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiTWFuYWdlcnMiLCJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsicmVhbG0tbWFuYWdlbWVudCI6eyJyb2xlcyI6WyJ2aWV3LWlkZW50aXR5LXByb3ZpZGVycyIsInZpZXctcmVhbG0iLCJtYW5hZ2UtaWRlbnRpdHktcHJvdmlkZXJzIiwiaW1wZXJzb25hdGlvbiIsInJlYWxtLWFkbWluIiwiY3JlYXRlLWNsaWVudCIsIm1hbmFnZS11c2VycyIsInF1ZXJ5LXJlYWxtcyIsInZpZXctYXV0aG9yaXphdGlvbiIsInF1ZXJ5LWNsaWVudHMiLCJxdWVyeS11c2VycyIsIm1hbmFnZS1ldmVudHMiLCJtYW5hZ2UtcmVhbG0iLCJ2aWV3LWV2ZW50cyIsInZpZXctdXNlcnMiLCJ2aWV3LWNsaWVudHMiLCJtYW5hZ2UtYXV0aG9yaXphdGlvbiIsIm1hbmFnZS1jbGllbnRzIiwicXVlcnktZ3JvdXBzIl19LCJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6InByb2ZpbGUgZW1haWwiLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsIm5hbWUiOiJBYmR1bHJhemFrIE9zbWFuIiwicHJlZmVycmVkX3VzZXJuYW1lIjoiemFhayIsImdpdmVuX25hbWUiOiJBYmR1bHJhemFrIiwiZmFtaWx5X25hbWUiOiJPc21hbiIsImVtYWlsIjoiemFhazAxMDFAaG90bWFpbC5jb20ifQ.YsgN1yH0na8pXBAm7qL4oKzbImygA6jcehbLx9TKD_WKdcfh9oomQFhkMX5_oAxkSwsXK42iiKy_FFPZc5NMrSKMb0r1DD54AItFsyn6lSJhKjAFdXLhodNpM3lxLAIKlkMjUDYQvt-SVkJd1_R78Z38Zl972zuC8xTwcg9eVzsDH5WzZcaCbnl976-zKzy53ZwUp1PFhDlWxOiwgHtT-nYk_dmN1CTXdqaHqf03srLvF54nUUOkeiN2YSSakvIocvCuEXkGm0xrwSFB0ZnB_EeHuEJWv3bCsdMZyu3fm8-zrkpxTICFKSFLrJlp6JIb9Qr1yvi9ScQLwGguvc84Yw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/auth/admin/realms/demo/users/4cb625e6-ebb4-4449-bedf-751cd42d792f",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"auth",
+								"admin",
+								"realms",
+								"demo",
+								"users",
+								"4cb625e6-ebb4-4449-bedf-751cd42d792f"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
