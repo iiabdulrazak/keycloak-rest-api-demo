@@ -1,0 +1,170 @@
+{
+	"info": {
+		"_postman_id": "a09b7469-3035-48f4-8ea7-d4b520b16fc9",
+		"name": "keycloak-formio",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Post Requests",
+			"item": [
+				{
+					"name": "Create Group",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI1WlA4S2Y5QTl6ME5sVzUwemM3VUJvanA5VFRmZmZYV3lqRG1iVWJWTmpZIn0.eyJleHAiOjE2Mzk2NjEyNTIsImlhdCI6MTYzOTY2MDk1MiwianRpIjoiOWVjZDcxNGItZmEwYS00M2M3LWI4NTAtZmJlZTNlNDgzMGNlIiwiaXNzIjoiaHR0cDovL2lwMTcyLTE4LTAtMjItYzZ0aXExbm5qc3YwMDBkMmpyMjAtODA4MC5kaXJlY3QubGFicy5wbGF5LXdpdGgtZG9ja2VyLmNvbS9hdXRoL3JlYWxtcy9mb3JtaW8tZGVtbyIsImF1ZCI6WyJyZWFsbS1tYW5hZ2VtZW50IiwiYWNjb3VudCJdLCJzdWIiOiJhMTA5ZTM4My00MzdiLTRmMTMtOGIyNC1hNjk0OTE4ZGEyOGQiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJmb3JtaW8tZGVtby10ZXN0Iiwic2Vzc2lvbl9zdGF0ZSI6IjYwMGVkMjY1LTljY2UtNDdmYy05YjM5LWJhOTYyOTBkZTY0ZSIsImFjciI6IjEiLCJhbGxvd2VkLW9yaWdpbnMiOlsiaHR0cDovL2FtYW5hLWZvLmNvbXB0ZWNoY28uY29tOjgyIl0sInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJkZWZhdWx0LXJvbGVzLWZvcm1pby1kZW1vIiwib2ZmbGluZV9hY2Nlc3MiLCJ1bWFfYXV0aG9yaXphdGlvbiJdfSwicmVzb3VyY2VfYWNjZXNzIjp7InJlYWxtLW1hbmFnZW1lbnQiOnsicm9sZXMiOlsidmlldy1yZWFsbSIsInZpZXctaWRlbnRpdHktcHJvdmlkZXJzIiwibWFuYWdlLWlkZW50aXR5LXByb3ZpZGVycyIsImltcGVyc29uYXRpb24iLCJyZWFsbS1hZG1pbiIsImNyZWF0ZS1jbGllbnQiLCJtYW5hZ2UtdXNlcnMiLCJxdWVyeS1yZWFsbXMiLCJ2aWV3LWF1dGhvcml6YXRpb24iLCJxdWVyeS1jbGllbnRzIiwicXVlcnktdXNlcnMiLCJtYW5hZ2UtZXZlbnRzIiwibWFuYWdlLXJlYWxtIiwidmlldy1ldmVudHMiLCJ2aWV3LXVzZXJzIiwidmlldy1jbGllbnRzIiwibWFuYWdlLWF1dGhvcml6YXRpb24iLCJtYW5hZ2UtY2xpZW50cyIsInF1ZXJ5LWdyb3VwcyJdfSwiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJlbWFpbCBwcm9maWxlIiwic2lkIjoiNjAwZWQyNjUtOWNjZS00N2ZjLTliMzktYmE5NjI5MGRlNjRlIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJuYW1lIjoiQWJkdWxyYXphayBPc21hbiIsInByZWZlcnJlZF91c2VybmFtZSI6InphYWsiLCJnaXZlbl9uYW1lIjoiQWJkdWxyYXphayIsImZhbWlseV9uYW1lIjoiT3NtYW4iLCJlbWFpbCI6InphYWswMTAxQGhvdG1haWwuY29tIn0.eon6gCUis2cn7AczwkxUeN4f2KVoP-X_HrPzFgekGh124abgvbby8rgtlYpjjuz7nZ0bkN3KHwT7KvqyPt9MNTJeSq9ZUcW6oSuLa6l9D-Ih-kU1YjI1J_rXsXhZZVpb68mJ2-yZ774wRv_TUbB2jQVeaOsA6qZ7b_U574rQIH1rH3IJm034qtfQqOPFTLFMdWRYx25Ct2EycAJAKXkobRbk72YSHIpf1Nt677aS4BkheKdH4FPseMs0gVCkGdWG-EfxRd9xU3mLytGZZ6yAqvYUAGQc9gRLwhf8GdoaHoECc169JLMp-RidHmIK5Q46vH5tQSmIqxaXxWCfAPZWBg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Washing Managements\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://ip172-18-0-22-c6tiq1nnjsv000d2jr20-8080.direct.labs.play-with-docker.com/auth/admin/realms/formio-demo/groups",
+							"protocol": "http",
+							"host": [
+								"ip172-18-0-22-c6tiq1nnjsv000d2jr20-8080",
+								"direct",
+								"labs",
+								"play-with-docker",
+								"com"
+							],
+							"path": [
+								"auth",
+								"admin",
+								"realms",
+								"formio-demo",
+								"groups"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Access Token",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "zaak",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "abcd@123",
+									"type": "text"
+								},
+								{
+									"key": "grant_type",
+									"value": "password",
+									"type": "text"
+								},
+								{
+									"key": "client_id",
+									"value": "formio-demo-test",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://ip172-18-0-22-c6tiq1nnjsv000d2jr20-8080.direct.labs.play-with-docker.com/auth/realms/formio-demo/protocol/openid-connect/token",
+							"protocol": "http",
+							"host": [
+								"ip172-18-0-22-c6tiq1nnjsv000d2jr20-8080",
+								"direct",
+								"labs",
+								"play-with-docker",
+								"com"
+							],
+							"path": [
+								"auth",
+								"realms",
+								"formio-demo",
+								"protocol",
+								"openid-connect",
+								"token"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Subgroup",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI1WlA4S2Y5QTl6ME5sVzUwemM3VUJvanA5VFRmZmZYV3lqRG1iVWJWTmpZIn0.eyJleHAiOjE2Mzk2NjIxMjgsImlhdCI6MTYzOTY2MTgyOCwianRpIjoiNmQ4OTkzMjMtZGUwOC00MmViLWEwOGItNDZkZDk1YTIwNjY3IiwiaXNzIjoiaHR0cDovL2lwMTcyLTE4LTAtMjItYzZ0aXExbm5qc3YwMDBkMmpyMjAtODA4MC5kaXJlY3QubGFicy5wbGF5LXdpdGgtZG9ja2VyLmNvbS9hdXRoL3JlYWxtcy9mb3JtaW8tZGVtbyIsImF1ZCI6WyJyZWFsbS1tYW5hZ2VtZW50IiwiYWNjb3VudCJdLCJzdWIiOiJhMTA5ZTM4My00MzdiLTRmMTMtOGIyNC1hNjk0OTE4ZGEyOGQiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJmb3JtaW8tZGVtby10ZXN0Iiwic2Vzc2lvbl9zdGF0ZSI6IjgxYWFjY2EzLTg4OTUtNDBjZi1hMGYzLTk0Zjc1YzhlNjUyMSIsImFjciI6IjEiLCJhbGxvd2VkLW9yaWdpbnMiOlsiaHR0cDovL2FtYW5hLWZvLmNvbXB0ZWNoY28uY29tOjgyIl0sInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJkZWZhdWx0LXJvbGVzLWZvcm1pby1kZW1vIiwib2ZmbGluZV9hY2Nlc3MiLCJ1bWFfYXV0aG9yaXphdGlvbiJdfSwicmVzb3VyY2VfYWNjZXNzIjp7InJlYWxtLW1hbmFnZW1lbnQiOnsicm9sZXMiOlsidmlldy1yZWFsbSIsInZpZXctaWRlbnRpdHktcHJvdmlkZXJzIiwibWFuYWdlLWlkZW50aXR5LXByb3ZpZGVycyIsImltcGVyc29uYXRpb24iLCJyZWFsbS1hZG1pbiIsImNyZWF0ZS1jbGllbnQiLCJtYW5hZ2UtdXNlcnMiLCJxdWVyeS1yZWFsbXMiLCJ2aWV3LWF1dGhvcml6YXRpb24iLCJxdWVyeS1jbGllbnRzIiwicXVlcnktdXNlcnMiLCJtYW5hZ2UtZXZlbnRzIiwibWFuYWdlLXJlYWxtIiwidmlldy1ldmVudHMiLCJ2aWV3LXVzZXJzIiwidmlldy1jbGllbnRzIiwibWFuYWdlLWF1dGhvcml6YXRpb24iLCJtYW5hZ2UtY2xpZW50cyIsInF1ZXJ5LWdyb3VwcyJdfSwiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJlbWFpbCBwcm9maWxlIiwic2lkIjoiODFhYWNjYTMtODg5NS00MGNmLWEwZjMtOTRmNzVjOGU2NTIxIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJuYW1lIjoiQWJkdWxyYXphayBPc21hbiIsInByZWZlcnJlZF91c2VybmFtZSI6InphYWsiLCJnaXZlbl9uYW1lIjoiQWJkdWxyYXphayIsImZhbWlseV9uYW1lIjoiT3NtYW4iLCJlbWFpbCI6InphYWswMTAxQGhvdG1haWwuY29tIn0.O_yzp8Puutr4tv8exhjF4u89ICEQxUFJFpmrjuyScsVdcstzSCsNxYFTF7g-J3zPcPOpLbkGfKDyfxB4fb4i9QQN1FqPjbvpccejyCp9au8dfM0EHca47HGeQSibotgji86ExE30s5tjoGfZsu5VBoOG4j2vZ3o2om6r_vgv73s8kdPpGtt9KQt7et3I04Q01YbctS92WBhhuQFwhK9bmSiZH9A9Ijld9Kdv8ByAOZ_a_ULvHR7N5AWQfW2bpdAauSqMSEtm54K9sfhGSxIG2doLjPeicjy9is-cw3RarXEYm1OSLMB8SglT74zZXAj-QznC41kkzv_MY_Sq1XBofA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"management3\",\r\n    \"path\": \"/management3\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://ip172-18-0-22-c6tiq1nnjsv000d2jr20-8080.direct.labs.play-with-docker.com/auth/admin/realms/formio-demo/groups/93cd0d4f-a99f-47ce-ae0e-8c71115bfd99/children",
+							"protocol": "http",
+							"host": [
+								"ip172-18-0-22-c6tiq1nnjsv000d2jr20-8080",
+								"direct",
+								"labs",
+								"play-with-docker",
+								"com"
+							],
+							"path": [
+								"auth",
+								"admin",
+								"realms",
+								"formio-demo",
+								"groups",
+								"93cd0d4f-a99f-47ce-ae0e-8c71115bfd99",
+								"children"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
